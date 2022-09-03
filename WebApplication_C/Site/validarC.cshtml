@@ -1,0 +1,16 @@
+﻿<!--Importar as Classes que serão utilizadas-->
+@using WebApplication_C.Classes
+
+<!--Códgo C# inicial-->
+@{
+    Layout = null;
+
+    //Criar um objeto pessoa
+    Usuario cliente = new Usuario();
+
+    //Buscar os dados do formulario pelo método POST e inserir no objeto cliente
+    cliente.nome = Request.Form["nome"];
+    cliente.senha = Request.Form["senha"];
+    cliente.email = Request.Form["email"];
+}
+

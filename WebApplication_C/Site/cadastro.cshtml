@@ -1,0 +1,57 @@
+﻿@using WebApplication_C.Classes;
+
+@{
+    Layout = null;
+    Banco.DBConnect();
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Somos Velozes</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width. initial-scale=1.0">
+    <link rel="stylesheet" href="~/CSS/style.css">
+</head>
+
+
+<body class="container">
+
+
+
+
+    <div class="tela-login">
+
+        <img src="Icone.png" alt="icon buy">
+
+        <h1>Cadastro</h1>
+        <form method="post" action="~/HTML/validação.cshtml">
+            <input id="nomeId" class="campo-nome" type="text" placeholder="Digite seu nome" required maxlength="16"><br>
+            <br><br>
+            <input id="emailId" type="email" class="campo_email" placeholder="Digite seu e-mail" required><br>
+            <br><br>
+            <input id="senhaId" class="campo_senha" type="password" placeholder="Digite sua senha" required minlength="4" maxlength="20"> <br>
+            <br><br>
+            <input class="btn_submit" type="submit" value="Cadastrar-me">
+            <br>
+            <h5>Já tenho uma conta.</h5>
+        </form>
+
+
+    </div>
+
+
+
+    <!--Relacionar o arquivo de scripts JavaScript-->
+    <script src="~/JavaScript/JavaScript.js"></script>
+    <!--Foi colocado no final do arquivo para tornar a exibição da página mais rápida-->
+
+
+</body>
+
+
+
+
+</html>
